@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Geist Mono";
+  src: url(resources/fonts/geist-mono/GeistMono-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3c3c3c;
+}
+
+.nav-bar {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-bar a {
+  color: #ffffff;
+  font-family: "Geist Mono", monospace;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 18px 20px 18px 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-bar a:hover {
+  background-color: #404040;
+  color: white;
+}
+
+.nav-bar a.active {
+  background-color: #272626;
+  color: #f4be6a;
+}
+
+.highlighted {
+  color: #f4be6a;
+}
+
+.hero-box h1 {
+  padding-left: 50px;
+  font-family: "Geist Mono", monospace;
+  font-size: 50px;
+  color: #e5e5e5;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hero-box h1::after {
+  content: "_";
+  animation: cursor-blink 1s step-start infinite;
+}
