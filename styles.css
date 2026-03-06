@@ -40,15 +40,25 @@ body {
 .nav-bar a.active {
   background-color: #272626;
   color: #b6c993;
+  padding-inline: 3%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .highlighted {
   color: #b6c993;
 }
 
+.hero-box {
+  background-color: #272626;
+  height: 100vh;
+  margin-top: 0;
+}
+
 .hero-box h1 {
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 0px;
+  padding-top: 50px;
   font-family: "Geist Mono", monospace;
   font-size: 35px;
   color: #e1ded7;
